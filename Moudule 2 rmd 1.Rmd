@@ -1,0 +1,95 @@
+---
+title: "Module 2 RMarkdown Doc 1"
+author: "Sanjeeb Bhattarai"
+date: "8/27/2020"
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# This is a level 1 header
+## R Markdown
+### This is a level 3 header
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+Here is the link to the [Google](https://google.com/)
+
+Here is a word in **bold** or another word in __bold__
+
+Here is a word in _italics_ or another word in _italics_
+
+This document was created using `Rmarkdown`
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+```
+2+2
+mean c(1,2,4)
+```
+* Breakfast
+    - food
+        + eggs
+        + toast
+        + bacon
+    - drink
+        + apple juice
+* Lunch
+    - taco
+* Dinner
+    - baked chicken
+    - broccoli
+    - rice
+    
+Here is an example of a numbered list:
+
+1. Breakfast
+    a. food
+        i. eggs
+        ii. toast
+        iii. bacon
+    b. drink
+        i. apple juice
+2. Lunch
+    a. taco
+3. Dinner
+    a. baked chicken
+    b. broccoli
+    c. rice
+    
+Here is an example of a blockquote:
+
+> This is a block quote. This
+> paragraph has two lines.
+>
+> 1. This is a list inside a block quote.
+> 2. Second item.
+
+Here is an example of a nested blockquote:
+
+> This is a block quote. This
+> paragraph has two lines.
+>
+> > This text is nested
+
+Here is an example of code in a blockquote:
+
+>     2+2
+>     mean(c(1,2,3,4,5))
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
